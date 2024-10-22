@@ -1,0 +1,20 @@
+.property-list {
+  display: flex;
+  width: 100%;
+
+  &__left {
+    width: 60%;
+  }
+
+  &__right {
+    height: 80vh;
+    width: 40%;
+    background-color: red;
+  }
+
+  &__list {
+    &--item {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+:root {
+  // for themeContext
+  --text-theme-dark: #ffffff;
+  --text-theme-light: #000000;
+  --text-theme-default: var(--text-theme-light);
+
+  --background-theme-dark: #222222;
+  --background-theme-light: #ffffff;
+  --background-theme-default: var(--background-theme-light);
+
+  --body-theme-dark: #121212;
+  --body-theme-light: #ffffff;
+  --body-theme-default: var(--body-theme-light);
+}

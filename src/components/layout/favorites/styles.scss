@@ -1,0 +1,10 @@
+.comments {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.comments .hidden {
+  height: 0;
+  overflow: hidden;
+}

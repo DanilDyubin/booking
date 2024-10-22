@@ -1,0 +1,74 @@
+.sort {
+  position: relative;
+
+  &__label {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__btn {
+    height: 48px;
+    padding: 0 12px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+}
+
+.modal {
+  position: absolute;
+  width: max-content;
+  margin-top: 4px;
+  padding: 4px 0;
+  border-radius: 6px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  z-index: 10;
+
+  &__list {
+    &-item {
+      padding: 8px 24px 12px 8px;
+      position: relative;
+      height: 48px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--color-gray--light);
+      }
+    }
+  }
+}
+
+.modal__list-item.active {
+  background-color: var(--color-violet--light);
+  color: var(--color-before);
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    top: 0;
+    left: 0;
+    background-color: var(--color-before);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+.sort__btn.btn__active {
+  background-color: var(--color-violet--light);
+  border: 1px solid var(--color-before);
+  color: var(--color-before);
+}

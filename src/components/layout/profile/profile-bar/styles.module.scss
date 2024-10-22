@@ -1,0 +1,49 @@
+.profile-bar {
+  &__container {
+    display: flex;
+  }
+
+  &__information {
+    padding: 40px;
+    text-align: center;
+    // border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: var(--color-bg--gray);
+
+    &-img {
+      width: 120px;
+      height: 120px;
+      //   padding: 1px;
+      border-radius: 100px;
+      // border: 1.5px solid var(--color-secondary);
+      overflow: hidden;
+      img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+    }
+
+    &-name {
+      margin-top: 20px;
+      font-size: 16px;
+      color: var(--color-black);
+    }
+
+    &-email {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: var(--color-black);
+    }
+  }
+
+  &__change {
+    &-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}

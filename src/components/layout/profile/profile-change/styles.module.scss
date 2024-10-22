@@ -1,0 +1,13 @@
+.profile-change {
+  &__img {
+    width: 80px;
+    height: 80px;
+    img {
+      height: 100%;
+    }
+  }
+
+  &__input--img {
+    display: none;
+  }
+}

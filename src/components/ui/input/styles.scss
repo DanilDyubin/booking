@@ -1,0 +1,53 @@
+.input-field {
+  position: relative;
+  height: 48px;
+  padding-left: 16px;
+  padding-right: 12px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg--gray);
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.2s ease all;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #707070;
+}
+
+.input {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--color-title);
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  // :valid полагается на валидацию браузера через поле required и после изменяет стили
+  top: 10px;
+  font-size: 12px;
+}
+
+// .input:focus + .label { может работать и так
+//   top: 10px;
+//   font-size: 12px;
+// }
+
+// .input:focus + .label,
+// .input:not(:placeholder-shown) + .label {
+//   top: 10px;
+//   font-size: 12px;
+// }

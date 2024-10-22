@@ -1,0 +1,21 @@
+.market {
+  padding-top: 90px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--color-title);
+  span {
+    margin-left: 8px;
+    color: #fd6360;
+  }
+}
+
+.text {
+  margin-top: 20px;
+  margin-bottom: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text);
+}
