@@ -100,7 +100,7 @@ export const CreatePost = ({ data }) => {
         createdAt: dayjs().format('DD/MM/YYYY HH:mm'),
         user: user,
         userId: user.id,
-        usersLikesIds: [],
+        likesId: [],
       });
       await updateDoc(doc(db, 'posts', docRef.id), {
         // docRef.id - id, которое посту присваивает firebase, добавляем его к нам в док, чтобы проще было искать и работать с постом

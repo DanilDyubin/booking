@@ -54,7 +54,7 @@ const Register: FC<IRegisterProps> = ({ setIsLogin }) => {
         avatar: imgUrl,
         id: res.user.uid,
         blocked: [],
-        likes: [],
+        favorites: [],
       });
       // создание документа с чатами юзера
       await setDoc(doc(db, 'userchats', res.user.uid), {

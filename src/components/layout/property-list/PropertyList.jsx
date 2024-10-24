@@ -35,7 +35,7 @@ export const PropertyList = () => {
           {posts.map((item) => {
             return (
               <li key={item.id} className={styles['property-list__list--item']}>
-                <PropertyItem item={item} />
+                <PropertyItem post={item} />
               </li>
             );
           })}
